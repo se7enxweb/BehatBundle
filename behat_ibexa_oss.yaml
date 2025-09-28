@@ -1,10 +1,10 @@
 imports:
-    - vendor/ezsystems/behatbundle/behat_suites.yml
-    - vendor/ezsystems/ezplatform-admin-ui/behat_suites.yml
-    - vendor/ezsystems/ezplatform-content-forms/behat_suites.yml
-    - vendor/ezsystems/ezplatform-http-cache/behat_suites.yml
-    - vendor/ezsystems/ezplatform-kernel/eZ/Bundle/EzPublishCoreBundle/behat_suites.yml
-    - vendor/ezsystems/ezplatform-user/behat_suites.yml
+    - vendor/se7enxweb/behatbundle/behat_suites.yml
+    - vendor/se7enxweb/ezplatform-admin-ui/behat_suites.yml
+    - vendor/se7enxweb/ezplatform-content-forms/behat_suites.yml
+    - vendor/se7enxweb/ezplatform-http-cache/behat_suites.yml
+    - vendor/se7enxweb/ezplatform-kernel/eZ/Bundle/EzPublishCoreBundle/behat_suites.yml
+    - vendor/se7enxweb/ezplatform-user/behat_suites.yml
 
 default:
     calls:
@@ -15,7 +15,7 @@ default:
         pretty: true
     extensions:
         Behat\MinkExtension:
-            files_path: '%paths.base%/vendor/ezsystems/ezplatform-admin-ui/src/lib/Behat/TestFiles/'
+            files_path: '%paths.base%/vendor/se7enxweb/ezplatform-admin-ui/src/lib/Behat/TestFiles/'
             base_url: '%env(string:WEB_HOST)%'
             goutte: ~
             javascript_session: 'selenium'
@@ -67,11 +67,11 @@ regression:
     suites:
         setup-oss:
             paths:
-                - '%paths.base%/vendor/ezsystems/behatbundle/features/personas'
-                - '%paths.base%/vendor/ezsystems/behatbundle/features/setup/richtextConfiguration/custom_styles.feature'
-                - '%paths.base%/vendor/ezsystems/behatbundle/features/setup/richtextConfiguration/custom_tags.feature'
-                - '%paths.base%/vendor/ezsystems/behatbundle/features/setup/loginMethods'
-                - '%paths.base%/vendor/ezsystems/behatbundle/features/setup/contentTranslation'
+                - '%paths.base%/vendor/se7enxweb/behatbundle/features/personas'
+                - '%paths.base%/vendor/se7enxweb/behatbundle/features/setup/richtextConfiguration/custom_styles.feature'
+                - '%paths.base%/vendor/se7enxweb/behatbundle/features/setup/richtextConfiguration/custom_tags.feature'
+                - '%paths.base%/vendor/se7enxweb/behatbundle/features/setup/loginMethods'
+                - '%paths.base%/vendor/se7enxweb/behatbundle/features/setup/contentTranslation'
             contexts:
                 - EzSystems\Behat\API\Context\ContentContext
                 - EzSystems\Behat\API\Context\ContentTypeContext
@@ -83,9 +83,9 @@ regression:
                 - EzSystems\Behat\API\Context\LanguageContext
         oss:
             paths:
-              - '%paths.base%/vendor/ezsystems/ezplatform-admin-ui/features/personas'
-              - '%paths.base%/vendor/ezsystems/ezplatform-admin-ui/features/standard'
-              - '%paths.base%/vendor/ezsystems/ezplatform-user/features/browser'
+              - '%paths.base%/vendor/se7enxweb/ezplatform-admin-ui/features/personas'
+              - '%paths.base%/vendor/se7enxweb/ezplatform-admin-ui/features/standard'
+              - '%paths.base%/vendor/se7enxweb/ezplatform-user/features/browser'
             filters:
                 tags: "~@broken&&@IbexaOSS"
             contexts: 
