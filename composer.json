@@ -1,15 +1,15 @@
 {
-    "name": "ezsystems/behatbundle",
+    "name": "se7enxweb/behatbundle",
     "description": "Behat bundle for help testing eZ Bundles and projects",
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "eZ Publish dev-team & eZ Community",
-            "homepage": "https://github.com/ezsystems/BehatBundle"
+            "homepage": "https://github.com/se7enxweb/BehatBundle"
         }
     ],
     "require": {
-        "php": "^7.3 || ^8.0",
+        "php": "^7.3 || ^8.1 || ^8.2 || ^8.3 || ^8.4",
         "ext-json": "*",
         "behat/behat": "^3.11",
         "behat/mink-goutte-driver": "^1.2",
@@ -19,7 +19,7 @@
         "dmore/chrome-mink-driver": "^2.7",
         "ezsystems/behat-screenshot-image-driver-cloudinary": "^1.1@dev",
         "ezsystems/ezplatform-http-cache": "^2.3@dev",
-        "ezsystems/ezplatform-kernel": "^1.3@dev",
+        "se7enxweb/ezplatform-kernel": "^1.3@dev",
         "friends-of-behat/mink": "^1.8",
         "friends-of-behat/mink-browserkit-driver": "^1.4",
         "friends-of-behat/mink-extension": "^2.4",
